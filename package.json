@@ -1,0 +1,23 @@
+{
+  "name": "test-demo",
+  "version": "0.0.1",
+  "description": "unit test demo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "unit",
+    "test",
+    "unit-test",
+    "demo"
+  ],
+  "author": "2ue",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0"
+  }
+}
