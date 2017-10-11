@@ -92,11 +92,16 @@ $ mocha test/unit/*.js
 
 ## 命令行参数与配置文件mocha.opts
 ### 常用的命令行
---recursive
---reporter
---watch
--t
---hlep,-h
+- --recursive
+mocha命令默认不对指定目录的自己目录匹配，如果需要使自己目录的测试用例运行，则需要加上`--recursive`
+- --reporter
+输出报告的格式，默认是`--reporter spec`,可以用`--reporters`命令查看有哪些输出格式
+- --watch
+监听变化，每次修改自动执行test
+- --timeout -t
+Mocha默认每个测试用例最多执行2000毫秒，如果到时没有得到结果，就报错。对于涉及异步操作的测试用例，这个时间往往是不够的，需要用-t或--timeout参数指定超时门槛
+- --hlep,-h
+查看有哪些命令
 'mocha.opts'放在test目录下，执行mocha命令时回去读取里面的配置
 命令行参数可以写在'mocha.opts'文件内,如
 ``` shell
