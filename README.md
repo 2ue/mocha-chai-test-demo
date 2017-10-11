@@ -24,7 +24,7 @@ categories:
 //全局安装
 $ npm install -g mocha
 ```
-ps: 全局安装之后，'mocha'命令将会在全局注册，可以在任何地方使用'mocha'命令
+ps: 全局安装之后，`mocha`命令将会在全局注册，可以在任何地方使用`mocha`命令
 
 ``` shell
 //安装项目依赖
@@ -78,8 +78,8 @@ $ mocha mocha/unit/add
     The Assert API covers the TDD assertion style.
 
 ## 异步
-- 非promise异步一定要带上done()，用于通知mocha该测试已经完成
-- 异步通过和参数-t结合一起用
+- 非`promise`异步一定要带上`done()`，用于通知`mocha`该测试已经完成
+- 异步通常和参数`-t`结合一起用
 
 ## 通配符
 ``` shell
@@ -88,22 +88,22 @@ $ mocha test/unit/{add,minus}.js
 //test/unit目录下所有js后缀的文件
 $ mocha test/unit/*.js
 ```
-'mocha'支持`shell`和`node`的通配符匹配规则，更多通配符规则可以查看各自的文档
+`mocha`支持`shell`和`node`的通配符匹配规则，更多通配符规则可以查看各自的文档
 
 ## 命令行参数与配置文件mocha.opts
 ### 常用的命令行
 - --recursive
-mocha命令默认不对指定目录的自己目录匹配，如果需要使自己目录的测试用例运行，则需要加上`--recursive`
+`Mocha`默认不对指定目录的子级目录匹配，如果需要使自己目录的测试用例运行，则需要加上`--recursive`
 - --reporter
 输出报告的格式，默认是`--reporter spec`,可以用`--reporters`命令查看有哪些输出格式
 - --watch
 监听变化，每次修改自动执行test
 - --timeout -t
-Mocha默认每个测试用例最多执行2000毫秒，如果到时没有得到结果，就报错。对于涉及异步操作的测试用例，这个时间往往是不够的，需要用-t或--timeout参数指定超时门槛
+`Mocha`默认每个测试用例最多执行`2000`毫秒，如果到时没有得到结果，就报错。对于涉及异步操作的测试用例，这个时间往往是不够的，需要用`-t`或`--timeout`参数指定超时门槛
 - --hlep,-h
 查看有哪些命令
-'mocha.opts'放在test目录下，执行mocha命令时回去读取里面的配置
-命令行参数可以写在'mocha.opts'文件内,如
+`mocha.opts`放在`test`目录下，执行`mocha`命令时回去读取里面的配置
+命令行参数可以写在`mocha.opts`文件内,如
 ``` shell
 $ mocha --reporter tap --recursive -t 3000
 ```
@@ -142,5 +142,5 @@ describe('hooks', function() {
 });
 ```
 ## 注意
-- 内置promise对象
-- ES6需要转码
+- 内置`promise`对象
+- `ES6`需要转码
