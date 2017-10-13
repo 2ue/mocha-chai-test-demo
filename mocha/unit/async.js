@@ -12,7 +12,7 @@ describe('异步获取数据', function () {
                 resolve(res);
             });
         });
-        getUrl.then(function(res){
+        getUrl.then(function (res) {
             expect(res).to.be.equal('https://www.google.com');
         })
     });
